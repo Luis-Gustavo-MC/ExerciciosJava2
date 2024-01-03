@@ -1,22 +1,20 @@
 import java.util.Scanner;
 
-/*Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por
-hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas
-decimais.*/
+
 
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int nFuncionario, nhoras;
-		float valor, total;
-		System.out.println("Escreva o número do funcionario: ");
-		nFuncionario = sc.nextInt();
-		System.out.println("Escreva o número de horas trabalhadas: ");
-		nhoras = sc.nextInt();
-		System.out.println("Escreva o valor do salario do funcionario: ");
-		valor = sc.nextFloat();
-		total = valor * nhoras;
-		System.out.println("Funcionario: " + nFuncionario + " Recebe: " + total );
+		int horaI,horaF,x;
+		System.out.println("Escreva a hora inicial e a hora final: ");
+		horaI = sc.nextInt();
+		horaF = sc.nextInt();
+		if(horaI<horaF) {
+			x = horaF - horaI;
+		}else {
+			x = 24 - horaI + horaF;
+		}
+		System.out.println("O jogo durou: " + x );
 		sc.close();
 	}
 }
