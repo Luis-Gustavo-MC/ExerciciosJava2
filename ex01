@@ -1,21 +1,19 @@
 import java.util.Scanner;
 
-/*Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma
-mensagem explicativa, conforme exemplos.*/
+/*Fazer um programa para ler um número inteiro, e depois dizer se este número é negativo ou não.
+*/
 
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		int a,b,soma;
-		System.out.println("Escreva dois valores inteiros: ");
-		a = sc.nextInt();
-		b = sc.nextInt();
-		soma = a + b;
-		
-		
-		System.out.println("Valor 1: " + a + " Valor 2:  " + b + " Soma: " + soma);
-		
+		int x;
+		System.out.println("Escreva um número: ");
+		x = sc.nextInt();
+		if(x>=0) {
+			System.out.println("Não Negativo");
+		}else{
+			System.out.println("Negativo");
+		}
 		sc.close();
 	}
 }
