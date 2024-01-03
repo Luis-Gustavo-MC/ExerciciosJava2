@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+/*Faça um programa para ler o valor do raio de um círculo, e depois mostrar o valor da área deste círculo com quatro
+casas decimais conforme exemplos.*/
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		final float pi = 3.1416F;
+		float valor, area;
+		System.out.println("Escreva um valor: ");
+		valor = sc.nextFloat();
+		area = (valor*valor) * pi;
+		
+		
+		System.out.printf("Valor: " + valor+ " Area: %.4f",area);
+		
+		sc.close();
+	}
+}
